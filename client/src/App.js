@@ -1,0 +1,21 @@
+
+import React, {useState} from 'react';
+// import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from './components/Home';
+
+
+function App() {
+
+  return (
+    <div className='w-11/12 h-screen mx-auto'>
+    <Router>
+      <Routes>
+        <Route path='/' element={[<Home/>]} />
+      </Routes>
+    </Router>
+    </div>
+  );
+}
+
+export default App;
